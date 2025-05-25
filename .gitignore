@@ -3,7 +3,12 @@ __pycache__/
 .env
 mlruns/
 data/
-models/
-.dvc/
 *.pkl
+.dvc/
+
+# Ignore model files but NOT the folder or .dvc metafiles inside models/
+models/*.pkl
+
+# Do NOT ignore .dvc metafiles anywhere (including models/)
 !*.dvc
+/models

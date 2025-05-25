@@ -1,0 +1,16 @@
+stages:
+  preprocess:
+    cmd: python src/preprocess.py --input data/processed/cleaned_data.csv --output data/processed/feature_engineered_data.csv
+    deps:
+      - src/preprocess.py
+      - data/processed/cleaned_data.csv
+    outs:
+      - data/processed/feature_engineered_data.csv
+
+  train:
+    cmd: python src/train.py --input data/processed/feature_engineered_data.csv --model_out models
+    deps:
+      - src/train.py
+      - data/processed/feature_engineered_data.csv
+    outs:
+      - models
