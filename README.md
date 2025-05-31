@@ -15,7 +15,7 @@ MediCareNet/
 ├── test/                         # Testing inputs and utilities
 │   └── sample_input_components.json  # Sample input (50D SVD vector) for testing /predict
 
-├── data/                         # Dataset files
+├── data/processed                         # Dataset files
 │   ├── cleaned_data.csv          # Raw cleaned EHR dataset
 │   └── feature_engineered_data.csv  # Output from preprocessing
 
@@ -24,6 +24,9 @@ MediCareNet/
 │   ├── train.py                  # Model training pipeline
 │   └── models/                   # Folder for trained models
 │       └── XGBoost_model.pkl     # Trained XGBoost model (SVD-reduced input)
+│   └── api/                   
+│       └── app.py                # Flask API for inference 
+
 ```
 
 ## 🚀 Getting Started
