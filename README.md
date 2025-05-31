@@ -7,7 +7,6 @@ MediCareNet is an end-to-end machine learning pipeline designed to predict hospi
 
 ```plaintext
 MediCareNet/
-├── app.py                        # Flask API for inference (serves /predict)
 ├── Dockerfile                    # Defines the container image
 ├── docker-compose.yml            # Docker Compose to run the service
 ├── requirements.txt              # Python dependencies
